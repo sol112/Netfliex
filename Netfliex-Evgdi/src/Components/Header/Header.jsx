@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaSearch, FaBell, FaCaretDown } from 'react-icons/fa';
+import { FaSearch, FaBell, FaCaretDown, FaUser } from 'react-icons/fa';
 import  './Header.css'
 function Header() {
   return (
@@ -31,13 +31,14 @@ function Header() {
           <FaBell />
         </div>
         <div className="profile">
-          <img
-            src="https://www.flaticon.com/free-icons/user"
-            alt="Profile"
+          {/* <img
+            src="https://www.reshot.com/free-svg-icons/item/profile-avatar-QKH4XD2YFV/"
+            alt=""
             className="profile-img"
 
             
-          />
+          /> */}
+          <FaUser className="profile-icon" />
           <FaCaretDown className="dropdown-icon" />
         </div>
       </div>
