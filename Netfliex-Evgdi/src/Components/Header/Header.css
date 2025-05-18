@@ -28,7 +28,18 @@ body {
   display: flex;
   width: 60%;
   gap: 50px;
+
   
+}
+@media (max-width: 768px) {
+  .nav-items {
+     /* Adjust gap for smaller screens */
+  display: flex;
+  width : 30%;
+  gap: 20px; /* Reduced gap for smaller screens */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  /* align-items: stretch;  */
+  }
 }
 
 .nav-items a {
