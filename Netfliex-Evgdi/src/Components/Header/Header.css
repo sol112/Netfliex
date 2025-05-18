@@ -33,13 +33,18 @@ body {
 }
 @media (max-width: 768px) {
   .nav-items {
-     /* Adjust gap for smaller screens */
-  display: flex;
-  width : 30%;
-  gap: 20px; /* Reduced gap for smaller screens */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  /* align-items: stretch;  */
-  }
+   gap: 15px;
+   padding: 17px;
+   justify-items: center;
+     }
+}
+
+@media (max-width: 600px) {
+  .nav-items {
+   gap: 13px;
+   display: grid;
+   justify-items: center;
+     }
 }
 
 .nav-items a {
