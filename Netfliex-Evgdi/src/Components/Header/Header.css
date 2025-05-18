@@ -41,7 +41,8 @@ body {
 
 @media (max-width: 600px) {
   .nav-items {
-   gap: 13px;
+   gap: 8px;
+   padding: 10px;
    display: grid;
    justify-items: center;
      }
