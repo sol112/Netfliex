@@ -1,11 +1,10 @@
 import React from "react";
+// react-bootstrap has never been used here
 import { useState, useEffect } from "react";
 import "../../Components/Row/Row.css";
 import axios from "../../Utilities/axios";
-import requests from "../../Utilities/requests";
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer'
-
 const base_url = "https://image.tmdb.org/t/p/original";
 const Row = ({ title, fetchUrl, isLargeRow }) => {
 	const [movies, setMovies] = useState([]);
@@ -41,7 +40,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 	}
 	console.log(trailerUrl);
 	return (
-		<div className="row">
+		<div className="row ">
+			
 			<h1>{title}</h1>
 			<div className="row__posters">
 				{movies.map((movie) => (
@@ -56,6 +56,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 			<div style={{ padding: '40px' }}>
 				{trailerUrl && <YouTube videoId={trailerUrl} opts={opts}/>}
 			</div>
+		
 		</div>
 	);
 };
