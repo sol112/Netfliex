@@ -33,9 +33,7 @@ body {
 }
 @media (max-width: 768px) {
   .nav-items {
-   gap: 15px;
-   padding: 17px;
-   justify-items: center;
+display: none;
      }
 }
 
@@ -46,7 +44,7 @@ body {
    padding: 15px;
    display: grid;
    justify-items: center; */
-   display: none;
+  display: none;
      }
      .netflix-header div img {
       width: 30px;
