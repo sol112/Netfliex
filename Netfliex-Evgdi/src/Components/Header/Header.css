@@ -52,7 +52,7 @@ body {
 
 @media (max-width: 768px) { 
   .nav-items {
-display: none;
+    display: none;
      }
 }
 .nav-items a {
