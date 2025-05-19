@@ -39,7 +39,7 @@ function Header() {
             
           /> */}
           <FaUser className="profile-icon" />
-          <FaCaretDown className="dropdown-icon" />
+          {/* <FaCaretDown className="dropdown-icon" /> */}
         </div>
       </div>
     </header>
